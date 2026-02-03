@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>MITASERU グリーンスムージー | Habit+</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: #fff;
+      overflow-x: hidden;
+    }
+    
+    .lp-wrapper {
+      max-width: 750px;
+      margin: 0 auto;
+      background: #fff;
+    }
+    
+    .lp-section {
+      display: block;
+      width: 100%;
+    }
+    
+    .lp-section img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    
+    /* Fixed CTA at bottom */
+    .fixed-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 10px 15px 20px;
+      background: linear-gradient(to top, 
+        rgba(255,255,255,1) 0%, 
+        rgba(255,255,255,1) 70%, 
+        rgba(255,255,255,0) 100%);
+    }
+    
+    .fixed-cta-inner {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+    
+    .cta-btn {
+      display: block;
+      width: 100%;
+      padding: 18px 20px;
+      background: linear-gradient(180deg, #7cc576 0%, #5bb356 100%);
+      border: none;
+      border-radius: 50px;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      box-shadow: 0 4px 15px rgba(91, 179, 86, 0.4);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(91, 179, 86, 0.5);
+    }
+    
+    .cta-btn:active {
+      transform: translateY(0);
+    }
+    
+    .cta-btn small {
+      display: block;
+      font-size: 12px;
+      font-weight: 500;
+      opacity: 0.9;
+      margin-bottom: 2px;
+    }
+    
+    .cta-btn strong {
+      font-size: 24px;
+    }
+    
+    /* Bottom padding for fixed CTA */
+    .lp-wrapper {
+      padding-bottom: 100px;
+    }
+    
+    /* Responsive scaling */
+    @media (max-width: 750px) {
+      .lp-wrapper {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="lp-wrapper">
+    <!-- Hero Section -->
+    <section class="lp-section lp-section--hero">
+      <img src="assets/section2.png" alt="Habit+ MITASERU グリーンスムージー - BMIは正常なのにLDLは要注意の30代の方に">
+    </section>
+    
+    <!-- Main Content -->
+    <section class="lp-section lp-section--main">
+      <img src="assets/section1.png" alt="MITASERU グリーンスムージー 製品詳細">
+    </section>
+  </div>
+  
+  <!-- Fixed CTA Button -->
+  <div class="fixed-cta">
+    <div class="fixed-cta-inner">
+      <a href="#purchase" class="cta-btn">
+        <small>初回限定 70%OFF</small>
+        <span>今すぐ <strong>980円</strong> で申し込む</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
